@@ -1,12 +1,9 @@
-
-
-
 ####################################
 # User Configuration Section Begins
 ####################################
 
 # Subscription name in Azure account. Check in Azure Portal.
-$azureSubscriptionName = "Ö?renciler için Azure"
+$azureSubscriptionName = "Ögrenciler için Azure"
 
 # Resource group name for resource deployment. Could be an existing resource group or a new one to be created.
 $resourceGroupName = "rgassignment6"
@@ -23,11 +20,11 @@ $location = "eastus"
 $serverName = "esinkundak114200013-1"
 $domain = "esinkundak114200013-1"
 $username = "esinkundak"
-$password = "abcdefgh?ijklmn"
+$password = "abcdefghiijklmn"
 
 
 # Azure site Name Prefix. Default is "smoc". It can be configured to any desired value.
-$siteNamePrefix = "alihan98ersoy-116200037-"
+$siteNamePrefix = "esinkundak114200013-"
 
 # Service Bus namespace. Please provide an already existing service bus namespace.
 # If it doesn't exist, a new one will be created with name $siteName + "sbn" which can also be later reused for any other hybrid connections.
@@ -76,8 +73,7 @@ Write-Host "Requirement check complete!!"
 $errorActionPreference = "Stop"
 
 #$templateUri = "https://raw.githubusercontent.com/azure-alerts-management/SMOMSConnector/master/azuredeploy.json"
-$templateUri = "https://raw.githubusercontent.com/esinkundakk/assignment6/master/azuredeploy.jsone"
-
+$templateUri = "https://raw.githubusercontent.com/esinkundakk/assignment6/master/azuredeploy.json"
 if(!$siteNamePrefix)
 {
     $siteNamePrefix = "smoc"
